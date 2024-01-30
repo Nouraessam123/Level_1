@@ -1,0 +1,382 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ee5057;
+  --paragraph: #898989;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+  cursor: pointer;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: 10vh;
+    background: white;
+  
+}
+
+.navbar nav{
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  justify-content: space-between;
+  background-color: White;
+  align-items: center;
+  height: 10vh;
+}
+.list ul{
+  display: flex;
+}
+.list ul li a{
+  padding: 29px;
+  border: 1px solid #868e96;
+  color: black;
+
+}
+.list ul li a:hover{
+  background-color:#dc3545;
+  color: #fff;
+  cursor: pointer;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.logo p{
+  margin-left: 10px;
+  font-size:30px;
+  font-weight: 700;
+}
+#Home {
+  height: 60vh;
+  background: url("./img/bg-img-1.jpg") no-repeat center center/cover;
+}
+
+#Home .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 1rem;
+}
+
+#Home .card .card-content {
+  width: 1000px;
+  background-color: #fff;
+  padding: 20px 40px;
+}
+
+#Home .card .card-content .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Home .card .card-content .row .col {
+  margin: 10px;
+  position: relative;
+  width: 30%;
+}
+
+#Home .card .card-content .row .col i {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+#Home .card .card-content .row .col input,
+#Home .card .card-content .row .col select {
+  padding: 15px 70px 15px 2.5rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  color: var(--paragraph);
+  background-color: #fff;
+}
+
+#Home .card .card-content .info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#Home .card .card-content .info p {
+  margin-left: 1rem;
+  font-size: 12px;
+  color: var(--paragraph);
+}
+
+#Home .card .card-content .info a {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 13px;
+}
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  width: 28%;
+}
+
+#PORTOFOLIO .contain{
+  background-color: #dc3545;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question{
+  text-align: center !important;
+  color: #fff;
+}
+.question h1{
+  font-weight: 600;
+  font-size: 40px;
+  padding:15px;
+  margin-top: 40px;
+}
+.question p{
+  padding: 30px;
+  font-size: 20px;
+}
+.question a{
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid white;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.question a:hover{
+  color: #dc3545;
+  background-color: white;
+}
+.textrow{
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+.art{
+  text-align: center !important;
+  width: 300px;
+  padding: 30px;
+}
+.art p{
+  line-height: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.art h2{
+  font-size: 20px;
+  font-weight: 300;
+  color: #dc3545;
+  margin-top: 20px;
+ 
+}
+.art  a{
+  color: #dc3545;
+  margin-top: 600px;
+}
+.btn{
+  background-color: #fff;
+  
+}
+i{
+  color: #dc3545;
+  font-size: 6em;
+
+}
+.vid{
+  width: 100%;
+  opacity: 0.8;
+}
+.sec3{
+  background: url('./img/bg-img-2.jpg');
+  max-width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7rem;
+  margin-top: 70px;
+}
+.ar{
+  display: flex;
+  max-width: 80%;
+  
+}
+.tex{
+  margin-left: 30px;
+}
+.tex h4{
+  font-size: 18px;
+  font-weight: bold;
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+.tex h5{
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+.tex p{
+  color: #868e96;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.tex  a{
+  color: #dc3545;
+  font-size: 15px;
+}
+.text{
+  width: 50%;
+}
+.text h3{
+  font-size: 60px;
+  font-weight: 550;
+  margin-bottom: 20px;
+}
+.text p{
+  font-size: 25px;
+  font-weight: 500;
+  color: #dc3545;
+}
+.sec4{
+  background: url('./img/bg-img-3.jpg') center center/cover no-repeat;
+  max-width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7rem;
+  margin-top: 70px;
+}
+.form{
+  background-color:#fff;
+  padding: 4rem;
+  width: 400px;
+  margin: auto;
+  
+}
+.form input{
+  margin-bottom: 20px;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: lightgray;
+}
+.form textarea{
+    width: 273px;
+    height: 72px;
+    margin-bottom: 20px;
+}
+.form #sub{
+  background-color: #dc3545;
+  color: #fff;
+}
+.port{
+  background: gainsboro center center/cover no-repeat;
+  max-width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content{
+  display: flex;
+  width: 400px;
+  margin-left: 150px;
+}
+.content .artic{
+  padding: 1rem;
+  background: #fff;
+}
+.content .artic p{
+  line-height: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.content .artic a{
+  padding: 10px 25px;
+  border: 2px solid white;
+  background: #dc3545;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.artic a:hover{
+  background-color: brown;
+}
+.con{
+  background-color: #fff;
+  margin: 150px;
+  width: 400px;
+  align-items: center;
+}
+.con .hdline{
+  background-color: #dc3545;
+  
+}
+.con .hdline h3{
+  color:#fff;
+  font-size: 25px;
+  font-weight: 300;
+  padding: 1rem;
+}
+.con .hdline p{
+  color:#fff;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.lin{
+  border: white;
+  background-color: #c2baba;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  margin-left: 20px;
+}
+.lin a{
+   margin-left: 10px;
+   color: #000;
+   font-size: 25px;
+   font-weight: 300;
+}
+
+.colm{
+  position: relative;
+}
+.colm i{
+  position: absolute;
+  color: #dc3545;
+  font-size: 20px;
+}
